@@ -19,3 +19,4 @@ console.log(myArray);
 //sort organiza el array
 myArray.sort();
 console.log(myArray);
+//Con splice se puede agregar un elemento en la posición deseada
