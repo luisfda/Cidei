@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<link rel = "stylesheet"href="css/styles.css"/>
+		<script type="text/javascript" src = "../assets/JS/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/lab6_10.js"></script>
+	</head>
+	<body>
+		<form action="" id="signup" method="post">
+			<fieldset>
+				<div>
+					<span class="label">Nombres y apellidos</span>
+					<input type="text" class="infobox" name ="nombres" placeholder="Nombres y apellidos"/>
+					<p class="error"></p> 
+				</div>
+				<div>
+					<span class="label">Email</span>
+					<input type="text" class="infobox" name ="email" placeholder="Correo electrónico"/>
+					<p class="error"></p> 
+				</div>		
+				<div>
+				<span class="label">Password</span>
+				<input type="password" class="password" name ="password" placeholder="Contrasenia"/>
+				<p class="error"></p> 
+				</div>
+				<div>
+					<span class="label">Confirmar Password</span>
+					<input type="password" class="confpass" name ="confpass" placeholder="Confirmar contrasenia"/>
+					<p class="error"></p> 
+				</div>
+				<span class="label">Seleccione el tipo de comida</span>
+				<form>
+				<input type="checkbox" name="food" value=5000>Pizza<br />
+				<input type="checkbox" name="food" value=3000>Hot Dog <br />
+				<input type="checkbox" name="food" value=2000>Coca cola<br />
+				<input type="checkbox" name="food" value=3000>Papas fritas <br />
+
+				<input type="radio" name="paymode" class="infobox" value="MasterCard"/> MasterCard <br />
+				<input type="radio" name="paymode" class="infobox" value="ANXCard"/> ANXCard <br />
+				<input type="radio" name="paymode" class="infobox" value="VisaCard"/> VisaCard <br />
+
+				<span class="label">Ciudad</span>
+				<select name="food" id="food" class="infobox" >
+					<option value ="0">Seleccione algún item</option>
+					<option value ="Bogota">Bogotá</option>
+					<option value ="Medellin">Medellín</option>
+					<option value ="Cali">Cali</option>
+					<option value ="PapitasFirtas">Papitas fritas</option>
+				</select><br />	
+
+				<input type ="submit" class="submit" value="Enviar" />
+				<!--<button type="button">Envair</button>-->
+			</fieldset>
+		</form>
+	</body>
+</html>
