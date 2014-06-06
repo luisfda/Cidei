@@ -37,10 +37,7 @@ input{
 	border-radius: 5px;
 }
 
-.chkb{
-	margin-left: 10px;
-	margin-top: 10px;
-}
+
 
 .label{
 	float: left;
@@ -49,7 +46,7 @@ input{
 
 .error{
 	border:1px solid red;
-	background-color: rgba(0, 255, 0, 0.1);
+	background-color: rgba(255, 0, 0, 0.1);
 }
 .sucess{
 	border:1px solid green;
@@ -76,7 +73,7 @@ input{
 	bottom: 0;
 	left: 0;
 
-	background: rgba(0,0,0,0);
+	background: rgba(0,0,0,0.8);
 	z-index:99999;
 
 	opacity:0;

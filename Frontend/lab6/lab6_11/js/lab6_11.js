@@ -9,7 +9,7 @@ $(document).ready(function(){
 		userid:function(uid){
 			var pattern = new RegExp(/^[0-9]+$/);
 			return pattern.test(uid);
-		}
+		}		
 	}
 
 	$('#nid').focus(function(){
@@ -82,12 +82,15 @@ $(document).ready(function(){
 		var data = $('.password').val();
 		var len = data.length;
 
-		if(len<1&&len===""){
+		console.log(len);
+
+		if(len<1&&len!==""){
 			$('.password').next().show();
 			$('.password-error').next().show();
 			$('.password-error').text('Ingrese una contrasenia');
 		}
 		else{
+			console.log("Llego acá");
 			$('.password').next().hide();
 			$('.password-error').next().hide();
 			localStorage.setItem('password', data);
@@ -103,7 +106,7 @@ $(document).ready(function(){
 		}
 		else{
 			$('.conf-password').next().hide();
-			$('conf-password-error').next().hide();
+			$('.conf-password-error').next().hide();
 
 			if($('.password').val() !== $('.conf-password').val()){
 				$('.conf-password').next().show();
@@ -124,7 +127,7 @@ $(document).ready(function(){
 			localStorage.setItem('email',data);
 		}
 		else{
-			$('emailadd').next().hide();
+			$('.emailadd').next().show();
 			$('.email-error').next().show();
 			$('.email-error').text('El email es incorrecto');
 		}
@@ -190,7 +193,8 @@ $(document).ready(function(){
 	});
 	
 	$(document).on('click', '#info', function(){
-		$('openModal > div').append(
+
+		$('#openModal > div').append(
 			'<h2>Detalle del Pedido</h2>'+
 			'<ul>'+
 			'<li>Su documento de identidad es: ' + localStorage.getItem('nid') + '</li>' +
