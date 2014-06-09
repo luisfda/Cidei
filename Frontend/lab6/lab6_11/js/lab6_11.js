@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+	//$('#openModal').html(originalContent);
+	
 	function Validate(){};
 
 	Validate.prototype={
@@ -48,9 +51,10 @@ $(document).ready(function(){
 	$('.city-error').addClass('error');
 	$('.city-error').hide();
 
-	$('#buttons #info').remove();
+	$('#openModal')
 
 	$('.button').bind('click', function(event){
+		$('#buttons #info').remove();
 		var validate = new Validate();
 		var data = $('#nid').val();
 
@@ -81,8 +85,6 @@ $(document).ready(function(){
 
 		var data = $('.password').val();
 		var len = data.length;
-
-		console.log(len);
 
 		if(len<1&&len!==""){
 			$('.password').next().show();
@@ -188,13 +190,15 @@ $(document).ready(function(){
 				$('.inputs').addClass('success');
 			}
 
+			
+
 			event.preventDefault();
 		
 	});
 	
-	$(document).on('click', '#info', function(){
-
-		$('#openModal > div').append(
+	$(document).on('click', '#info', function(){	
+		$('#openModal').html('<div><a href="#close" title="Close" class="close">X</a></div>');
+		$('#openModal > div').append(			
 			'<h2>Detalle del Pedido</h2>'+
 			'<ul>'+
 			'<li>Su documento de identidad es: ' + localStorage.getItem('nid') + '</li>' +
@@ -211,5 +215,10 @@ $(document).ready(function(){
 		$.each(meals,  function(key, value){
 			$('#listMeals > ul').append('<li> El producto ' + key + ' cuesta $' + value + 'M/Cte</li>');
 		});
+
+
+	//$('.close').bind('click', function(event){
+		//$('#openModal').empty();
+		//});
 	});
 });
