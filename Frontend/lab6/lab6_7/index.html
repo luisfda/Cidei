@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<link rel = "stylesheet"href="css/styles.css"/>
+		<script type="text/javascript" src = "../assets/JS/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/lab6_7.js"></script>
+	</head>
+	<body>
+		<form action="" id="signup" method="post">
+			<div>
+				<span class="label">Usuario</span>
+				<input type="text" class="userid" name ="userid" />
+				<p class="error">This field cannot be blank</p>
+			</div>
+			<div>
+				<span class="label">Password</span>
+				<input type="password" class="password" name ="password" />
+				<p class="error"></p> 
+			</div>
+			<div>
+				<span class="label">Confirmar Password</span>
+				<input type="password" class="confpass" name ="confpass" />
+				<p class="error"></p> 
+			</div>			<!--<p class="error"></p>
+			<p class="result"></p>-->
+			<input type ="submit" class="submit" value="Enviar" />
+		</form>
+	</body>
+</html>

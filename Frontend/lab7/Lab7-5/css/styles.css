@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../sass/styles.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: bold;
+}
+
+/*Header*/
+/* line 16, ../sass/styles.scss */
+.header {
+  background-color: #3a3f43;
+  border-bottom: 14px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  padding: 22px 0;
+}
+
+/* line 26, ../sass/styles.scss */
+.logo {
+  background-color: #515558;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  width: 250px;
+}
+
+/* line 35, ../sass/styles.scss */
+.logo h1 {
+  color: #fff;
+  font-weight: normal;
+  font-family: Arial,sans-serif;
+  margin-bottom: 0;
+}
+
+/*Navegation*/
+/* line 44, ../sass/styles.scss */
+.nav-menu,
+.portafolio > figure.columns {
+  display: none;
+}
+
+/* line 48, ../sass/styles.scss */
+label {
+  color: #3a3f43;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* line 55, ../sass/styles.scss */
+.nav-menu:checked + label {
+  color: #fff;
+  background-color: #3a3f43;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 67, ../sass/styles.scss */
+#all:checked ~ .portafolio .all,
+#dvelop:checked ~ .portafolio .poster,
+#test:checked ~ .portafolio .illustration,
+#languages:checked ~ .portafolio .typography,
+#skills.checked ~ .portafolio .package {
+  display: block;
+}
+
+/*Portafolio*/
+/* line 72, ../sass/styles.scss */
+.portafolio {
+  margin-top: 20px;
+}
+
+/* line 76, ../sass/styles.scss */
+.portafolio .four.columns {
+  margin-left: 0;
+  margin-right: 0;
+  width: 240px;
+}
+
+/* line 82, ../sass/styles.scss */
+.portafolio > figure {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 87, ../sass/styles.scss */
+.portafolio > figure img {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 92, ../sass/styles.scss */
+.portafolio figcaption {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(58, 63, 67, 0.8);
+  padding: 10%;
+  -webkit-transform: translateX 100%;
+  -moz-transform: translateX 100%;
+  -ms-transform: translateX 100%;
+  -o-transform: translateX 100%;
+  transform: translateX 100%;
+  -webkit-transition: all 350ms;
+  -moz-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+
+/* line 109, ../sass/styles.scss */
+.portafolio figcaption h4 {
+  color: #fff;
+}
+
+/* line 114, ../sass/styles.scss */
+.portafolio figcaption p {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* line 119, ../sass/styles.scss */
+.portafolio > figure:hover figcaption {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 127, ../sass/styles.scss */
+footer {
+  border-top: 1px solid #ccc;
+  margin-top: 28px;
+  padding: 28px 0;
+}
