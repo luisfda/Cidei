@@ -4,4 +4,13 @@
 	box-sizing:border-box;
 }
 
+@mixin tranform($roundOne:100%)
+{
+	-webkit-transform:translateX($roundOne);
+	-moz-transform:translateX($roundOne);
+	-ms-transform:translateX($roundOne);
+	-o-transform:translateX($roundOne);
+	transform:translateX($roundOne);
+}
+
 
