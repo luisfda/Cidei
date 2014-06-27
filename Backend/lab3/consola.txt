@@ -1,0 +1,144 @@
+1  cd c:
+    
+2  cd xampp/htdocs/cidei/backend
+    
+3  cd lab_2
+    
+4  cd lab2
+    
+5  git add -A
+    
+6  cd ..
+    
+7  cd ..
+    
+8  git add -A
+    
+9  git commit -am "asdfs"
+   
+10  git push origin develop
+   
+11  cd backend
+   
+12  cd lab2
+   
+13  cd ..
+   
+14  cd lab3
+   
+15  virtualenv venv
+   
+16  source venv/scripts/activate
+   
+17  pip install django
+   
+18  pip install django
+   
+19  pip install django
+   
+20  startproject lab3 .
+   
+21  django-admin.py startproject lab3 .
+   
+22  python manage.py startapp list
+   
+23  tree list
+   
+24  tree lab3
+   
+25  cd lab3
+   
+26  tree list
+   
+27  cd ..
+   
+28  python manage.py sql list
+   
+29  cd lab3
+   
+30  python manage.py sql list
+   
+31  python manage.py sqlall list
+   
+32  cd ..
+   
+33  python manage.py sqlall list
+   
+34  python manage.py sql list
+   
+35  python manage.py sql list
+   
+36  python manage.py sql list
+   
+37  python manage.py sql list
+   
+38  python manage.py sql list
+   
+39  python manage.py sql list
+  
+40  python manage.py sql list
+   
+41  python manage.py sqlall list
+   
+42  python manage.py validate
+   
+43  python manage.py syncdb
+   
+44  python manage.py runserver 
+   
+45  python manage.py runserver 
+   
+46  python manage.py runserver 
+   
+47  python manage.py runserver 
+   
+48  python manage.py runserver 
+   
+49  python manage.py runserver 
+   
+50  python manage.py runserver 
+   
+51  clear
+   
+52  python
+   
+53  python manage.py shell
+   
+54  pip install django-autofixtures
+   
+55  pip install django-autofixture
+   
+56  pip freeze>requeriments.txt
+   
+57  cat requeriments.txt
+   
+58  python
+   
+59  python manage.py syncdb
+  
+60  python manage.py help
+   
+61  python manage.py loadtestdata list.Category:2 list.Item:3
+   
+62  pip install django-mockups
+   
+63  pip freeze>requeriments.txt
+  
+64  cat requeriments.txt
+   
+65  pip uninstall django-mockups
+   
+66  pip freeze>requeriments.txt
+   
+67  cat requeriments.txt
+   
+68  python manage.py loadtestdata list.Category:3
+   
+69  pip freeze>requeriments.txt
+   
+70  history > consola.txt
+
+
+
+
+pip install -r requeriments.txt
